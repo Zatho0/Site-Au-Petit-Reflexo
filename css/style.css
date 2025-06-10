@@ -60,28 +60,24 @@ nav ul li{
 
 /**************HERO**************/
 
-.hero{
-   background-image: url("/asset/Img/hero_img.webp");
-   background-color: black;
-   background-position: center;
-   background-size: cover;
-   background-repeat: no-repeat;
-   z-index: -100;
-   min-height: 100vh;
-   
+.bg_image{
+    background-image: url("/asset/Img/hero_img.webp");
+    inset: 0;
+    position: absolute;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-.filtre_noir{
-    background-color: rgba(0, 0, 0, 0.3);
-    min-height: 100vh;
-    inset: 0px;
-    backdrop-filter: blur(4px);
-    
-    
+.text_hero{
+    max-width: 768px;
 }
 
 h1{
-    
-    position: absolute;
+    font-size: 60px;
+}
+
+.text_hero h3{
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.9);
 }
 
