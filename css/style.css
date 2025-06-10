@@ -29,6 +29,7 @@ header{
     left: 0;
     right: 0;
     top: 0;
+    z-index: 100;
 }
 
 
@@ -60,11 +61,27 @@ nav ul li{
 /**************HERO**************/
 
 .hero{
-   background-image: url("https://images.pexels.com/photos/9031621/pexels-photo-9031621.jpeg");
+   background-image: url("/asset/Img/hero_img.webp");
+   background-color: black;
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
-   z-index: -1;
-   padding-bottom: 916px;
+   z-index: -100;
+   min-height: 100vh;
+   
+}
+
+.filtre_noir{
+    background-color: rgba(0, 0, 0, 0.3);
+    min-height: 100vh;
+    inset: 0px;
+    backdrop-filter: blur(4px);
+    
+    
+}
+
+h1{
+    
+    position: absolute;
 }
 
