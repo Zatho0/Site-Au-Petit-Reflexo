@@ -10,6 +10,10 @@
     padding: 0;
 }
 
+
+
+
+/*******************SITE**************************/
 body{
     position: relative;
 }
@@ -19,16 +23,13 @@ body{
     margin-right: 180px;
 }
 
-
-/*******************SITE**************************/
-
-
 /****************Nav Bar***********************/
 header{
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
+    z-index: 100;
 }
 
 
@@ -49,22 +50,118 @@ nav ul{
 }
 
 nav ul li{
+    display: flex;
     padding: 16px;
+    align-items: center;
+    font-weight: 500;
+}
+nav ul li:hover{
+    border-bottom: 2px solid rgb(52, 211, 153);
+    
+    
 }
 
 .active{
-    color: red;
+    text-decoration: underline;
+    text-decoration-color: rgb(52, 211, 153);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+    
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
 }
 
 
 /**************HERO**************/
 
 .hero{
-   background-image: url("https://images.pexels.com/photos/9031621/pexels-photo-9031621.jpeg");
-   background-position: center;
-   background-size: cover;
-   background-repeat: no-repeat;
-   z-index: -1;
-   padding-bottom: 916px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+}
+
+.bg-image{
+    background-image: url("/asset/Img/hero_img.webp");
+    inset: 0;
+    position: absolute;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100vw;
+    z-index: -2;
+    background-position: center;
+}
+
+.filtre{
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
+}
+
+.text_hero{
+    max-width: 768px;
+    
+}
+
+h1{
+    font-size: 60px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 24px;
+}
+
+h1 span{
+    color: rgb(52, 211, 153);
+    font-weight: 400;
+}
+.text_hero h3{
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+
+.bouton{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.bouton_info{
+    padding: 16px 32px;
+    background: rgb(5, 150, 105);
+    border-radius: 8px;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    transition:  0.3s ease-in-out;
+}
+
+.bouton_info:hover{
+    
+    background-color: rgb(4, 120, 87);
+    cursor: pointer;
+    
+}
+
+.rdv{
+    padding: 16px 32px;
+    border: 2px solid white;
+    border-radius: 8px;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+.rdv:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
 }
 
