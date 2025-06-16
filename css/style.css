@@ -48,6 +48,7 @@ header{
 nav{
     display: flex;
     justify-content: space-between;
+    
 }
 
 nav img{
@@ -133,6 +134,11 @@ h1 span{
     color: rgba(255, 255, 255, 0.9);
     font-weight: 400;
     margin-bottom: 32px;
+}
+
+.text_hero h3 span{
+    color: rgb(52, 211, 153);
+    font-weight: 600;
 }
 
 .bouton{
