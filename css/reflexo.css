@@ -1,0 +1,264 @@
+/******************RESET***********************/
+
+
+*{
+    list-style: none;
+    text-decoration: none;
+    
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    border-color: #e5e7eb;
+    border-style: solid;
+    border-width: 0;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+
+/*******************SITE**************************/
+body{
+    position: relative;
+}
+
+.container{
+    margin-left: 180px;
+    margin-right: 180px;
+}
+
+/****************Nav Bar***********************/
+header{
+    padding: 1rem 0;
+}
+
+
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+nav img{
+    max-width: 64px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li{
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    font-weight: 500;
+}
+nav ul li a:hover{
+    border-bottom: 2px solid rgb(52, 211, 153);
+    
+    
+}
+
+.active{
+    border-bottom: 2px solid rgb(52, 211, 153);
+    
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+/******************Hero Section*****************/
+
+.hero{
+    color: rgb(255, 255, 255);
+    padding: 5rem 0;
+    background: linear-gradient(to right,#059669, #047857);
+    position: relative;
+}
+
+.hero_txt{
+    max-width: 48rem;
+}
+.titre-h1{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    }
+.titre-h1 svg{
+    width: 3rem;
+    height: 3rem;
+    display: block;
+    
+}
+
+.titre-h1 h1{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-left: 1rem;
+}
+
+.hero_txt p{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    color: rgb(209 250 229);
+
+}
+
+/******************Section Reflexo*****************/
+
+.reflexo{
+    padding: 5rem 0;
+    background-color: rgb(255 255 255);
+    
+}
+
+.reflexo_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.reflexo_img{
+    border-radius: 1rem;
+    
+    box-shadow: 0 4px 20px 0px rgba(0,0,0,0.15);
+    
+}
+
+.reflexo_img img{
+    width: 100%;
+    height: auto;   
+    display: block;
+    
+}
+
+.reflexo_histoire h2{
+    color: rgb(38 38 38);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 2.25rem;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+
+.reflexo_histoire p{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: rgb(107 114 128);
+    margin-bottom: 1.5rem;
+}
+
+.reflexo_pourquoi{
+    padding: 1.5rem;
+    background: rgb(236 253 245);
+    border-radius: 1rem;
+}
+.reflexo_pourquoi h3{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgb(38 38 38);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+.reflexo_pourquoi h3 svg{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.5rem;
+}
+/**************Footer****************/
+
+
+footer{
+    padding: 3rem 2rem;
+    background-color: rgb(38 38 38);
+    color: rgb(255, 255, 255);
+    
+}
+
+footer .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+footer.logo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.footer-txt{
+    color: rgb(212 212 212);
+}
+
+.list-service h4{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    overflow: hidden;
+    line-height: 1.25rem;
+}
+
+.list-service ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    color: rgb;
+}
+
+
+
+
+.lien-utiles h4{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    overflow: hidden;
+    line-height: 1.25rem;
+
+}
+
+.lien-utiles ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-contact ul{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 1rem;
+    
+
+}
+.footer-contact ul li{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+footer li{
+    color: rgb(212 212 212);
+}
