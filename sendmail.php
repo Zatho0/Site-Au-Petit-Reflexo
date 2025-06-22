@@ -36,22 +36,34 @@ try {
     $mail->Port = 587;
 
     // Expéditeur et destinataire
-    $mail->setFrom($mail->Username, 'Prise de rendez-vous');
-    $mail->addAddress($email, 'Auptit reflexo'); // Tu peux aussi mettre une autre adresse
+    $mail->setFrom($mail->Username, 'Reception de votre message');
+    $mail->addAddress($email, 'Utilisateur'); // Tu peux aussi mettre une autre adresse
 
     // Contenu de l'email
     $mail->isHTML(false);
-    $mail->Subject = 'Prise de rendez-vous';
+    $mail->Subject = 'Confirmation de reception';
     $mail->Body = "Bonjour $name,\n\n"
-                . "Vous avez reçu un nouveau message de prise de rendez-vous :\n\n"
-                . "Nom : $name\n"
-                . "Email : $email\n"
-                . "Téléphone : $telephone\n"
-                . "Message : $message\n\n"
-                . "Service demandé : $service\n\n"
-                . "Merci de répondre à ce message pour confirmer le rendez-vous.";
+                . "Merci pour votre message concernant le service $service.\n"
+                . "Nous avons bien reçu votre message et nous vous contacterons bientôt.\n\n"
+                . "Cordialement,\n"
+                . "L'équipe Auptit reflexo\n\n"
+                ."Nous contacter au : 06 06 06 06 06\n";
 
     $mail->send();
+
+    //envoie du message a autpit reflexo
+    $mail->isHTML(false);
+    $mail->setFrom($mail->Username, "Nouveau message de $name");
+    $mail->addAddress("thomas.reix4@gmail.com", 'Auptit reflexo');
+    $mail->Subject = "Nouveau message de $name";
+    $mail->Body = "Vous avez reçu un nouveau message de $name.\n\n"
+                . "Email: $email\n"
+                . "Téléphone: $telephone\n"
+                . "Service: $service\n\n"
+                . "Message:\n$message";
+    
+    $mail->send();
+
     echo "✅ Message envoyé avec succès !";
 } catch (Exception $e) {
     echo "❌ Le message n'a pas pu être envoyé. Erreur: {$mail->ErrorInfo}";
